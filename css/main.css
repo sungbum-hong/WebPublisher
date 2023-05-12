@@ -1,0 +1,1014 @@
+@charset "utf-8";
+
+@import url(../css/reset.css);
+
+/* ******************* 레이아웃 구성시작 **************** */
+#header > div,
+#footer > div,
+#intro > div {
+  padding: 0;
+}
+#footer {
+  height: 63px;
+}
+#intro {
+  height: 100vh;
+}
+#portfolio {
+  background-color: #f7f7f7;
+}
+
+.container,
+.container-fluid {
+  height: 100%;
+  padding: 105px 0;
+}
+
+.container > h3 {
+  text-align: center;
+  height: 42px;
+  font: 600 40px/42px "Montserrat", sans-serif;
+}
+
+.container .col-xs-12 > h3 {
+  text-align: center;
+  height: 42px;
+  font: 600 40px/42px "Montserrat", sans-serif;
+  margin-bottom: 42px;
+}
+
+/* ******************* 공통영역 선언시작 **************** */
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none !important;
+}
+
+/* Button Style Setting */
+.button {
+  display: inline-block;
+  width: 160px;
+  height: 42px;
+  text-align: center;
+  font: 500 1.4rem/42px "Montserrat", sans-serif;
+  border: 1px solid #000;
+  border-radius: 10px;
+
+  -webkit-transition: all ease 0.6s;
+  -moz-transition: all ease 0.6s;
+  -o-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+
+.btn1 {
+  background-color: #fff;
+  color: #1c1c1c;
+}
+.btn1:hover {
+  color: #fff;
+  background-color: #1c1c1c;
+}
+
+.btn2 {
+  background-color: #fff;
+  color: #333;
+}
+.btn2:hover {
+  background-color: #e2e2e2;
+}
+
+.navbar-collapse {
+  height: 100%;
+}
+
+/* ***************** Header Start ******************/
+
+#header {
+  padding: 15px 0;
+  background-color: transparent;
+  border: 0;
+}
+
+#header .container {
+  padding: 0 15px;
+}
+#header h1,
+#header #gnb {
+  height: auto;
+  line-height: 30px;
+  border: none;
+}
+
+#header h1 {
+  float: left;
+  margin-top: 5px;
+}
+#header #gnb {
+  float: right;
+}
+#header h1 a,
+#header #gnb a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Logo */
+#header h1 {
+  width: 120px;
+  padding: 5px 0;
+}
+#header h1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Gnb */
+#header #gnb a {
+  padding: 5px 15px;
+  font: bold 1.4rem/30px "Nanum Gothic", sans-serif;
+
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+#header #gnb a:hover {
+  color: red;
+}
+
+/* 메뉴 활성화 클래스 */
+#header,
+#header h1 a,
+#header #gnb a {
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+/* Header fixed */
+.fixed {
+  padding: 10px 0 !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.fixed #gnb a {
+  color: #fff !important;
+}
+.fixed #gnb a:hover {
+  color: #1c1c1c !important;
+  background-color: transparent !important;
+}
+
+/* 상단 스크롤스파이 활성화 클래스 - .active */
+#header.navbar-default .navbar-nav > .active > a,
+#header.navbar-default .navbar-nav > .active > a:focus,
+#header.navbar-default .navbar-nav > .active > a:hover {
+  color: red !important;
+  background-color: transparent !important;
+}
+
+/* ***************** Header End ***************** */
+
+/* ***************** Intro Start ***************** */
+/* Intro Start */
+
+#intro .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#intro .intro-content {
+  width: 970px;
+  height: auto;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -485px;
+  margin-top: -50px;
+}
+#intro .intro-content h4,
+#intro .intro-content h1 {
+  margin-bottom: 21px;
+}
+#intro .intro-content h4 {
+  height: 21px;
+  font: 300 1.6rem/21px "Roboto", sans-serif;
+  position: relative;
+}
+#intro .intro-content h1 {
+  height: 63px;
+  font: 300 6rem/63px "Roboto", sans-serif;
+}
+#intro .intro-content p {
+  height: 21px;
+  font: 300 2.4rem/21px "Roboto", sans-serif;
+}
+#intro .intro-content span {
+  font-weight: bold;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/intro1.png");
+  background-repeat: no-repeat;
+}
+
+/* ***************** Intro End ***************** */
+
+/* ***************** About Start ***************** */
+#about {
+  position: relative;
+}
+
+#about h2 {
+  margin-bottom: 21px;
+  font: 800 3.6rem "Montserrat", sans-serif;
+}
+
+#about h4 {
+  height: 42px;
+  margin-bottom: 42px;
+  font: 600 2.4rem/42px "Montserrat", sans-serif;
+}
+#about .p-text {
+  height: auto;
+  margin-bottom: 70px;
+}
+#about .p-images {
+  float: left;
+  margin-right: 10%;
+}
+
+#about .p-text h2 + p {
+  margin-bottom: 63px;
+}
+
+#about .f-box {
+  width: 300px;
+  height: auto;
+  float: left;
+}
+
+#about .f-box .btn1 {
+  margin-top: 105px;
+}
+
+#about .f-box p,
+.s-box p,
+.fo-box p {
+  font: 300 14px/1.5 "Nanum Gothic", sans-serif;
+  margin-right: 5px;
+}
+
+#about .f-box span,
+.s-box span,
+.fo-box span {
+  font: bold 14px/1.5 "Nanum Gothic", sans-serif;
+}
+
+#about .s-box {
+  width: 230px;
+  float: right;
+  margin: 0 5% 21px 0;
+}
+#about .fo-box {
+  width: 230px;
+  float: right;
+  margin: 0 5% 21px 0;
+}
+#about .livil {
+  margin-bottom: 40px;
+}
+
+#about .f-title,
+.s-title,
+.fo-title {
+  height: 21px;
+  font: 500 2.1rem/21px "Montserrat", sans-serif;
+  margin-bottom: 21px;
+}
+/* ***************** About End ***************** */
+
+/* ***************** Skill Start ***************** */
+#skill {
+  background-color: #f7f7f7;
+}
+
+#skill h3 {
+  margin-bottom: 84px;
+}
+
+#skill h4 {
+  font: bold 3.1rem "Montserrat", sans-serif;
+  margin-bottom: 63px;
+}
+
+#skill .c-box,
+.d-box {
+  width: 50%;
+}
+
+#skill .c-box {
+  float: left;
+}
+
+#skill .d-box {
+  float: right;
+}
+
+#skill .progress-group li {
+  width: 95%;
+  margin-bottom: 30px;
+  color: white;
+}
+
+#skill .progress-group .determinate {
+  padding-left: 10px;
+}
+
+#skill .progress:nth-child(1) .determinate {
+  background-color: #1c1c1c;
+}
+#skill .progress:nth-child(2) .determinate {
+  background-color: #1c1c1c;
+}
+#skill .progress:nth-child(3) .determinate {
+  background-color: #1c1c1c;
+}
+#skill .progress:nth-child(4) .determinate {
+  background-color: #1c1c1c;
+}
+
+/* ***************** Skill End ***************** */
+
+/* ***************** What I do Start ***************** */
+
+#what .content {
+  text-align: center;
+  padding: 0 30px 0;
+}
+
+#what .content > div {
+  width: 31.3%;
+  height: 294px;
+  padding: 42px 0;
+  background-color: #f7f7f7;
+  margin: 0 1% 21px;
+}
+
+#what .content > div:nth-child(3),
+#what .content > div:last-child {
+  margin-right: 0;
+}
+#what .content > div .icon {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  margin: auto;
+  margin-bottom: 21px;
+  font-size: 2.5rem;
+  color: #1c1c1c;
+  background-color: #fff;
+  border-radius: 50%;
+}
+#what .content > div .icon:hover {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+#what .content > div h3 {
+  height: 42px;
+  font: 700 1.8rem/42px "Nanum Gothic", sans-serif;
+  margin-bottom: 21px;
+}
+
+#what .content > div p {
+  height: 63px;
+  font: 500 1.4rem/ "Nanum Gothic", sans-serif;
+}
+
+/* ***************** Portfolio Start ***************** */
+
+#portfolio .container .g-menu ul {
+  margin: 42px auto 105px;
+  text-align: center;
+}
+
+#portfolio .container .g-menu li {
+  display: inline-block;
+  height: 30px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+#portfolio .container .g-menu li a {
+  display: block;
+  height: 100%;
+  padding: 0 5px;
+  font: 500 1.6rem/30px "Montserrat", sans-serif;
+  position: relative;
+}
+#portfolio .container .g-menu li a::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+
+#portfolio .container .g-menu li a:hover::after {
+  opacity: 1;
+}
+
+#portfolio .grid .grid-item {
+  width: 31.3%;
+  margin: 0 1% 21px;
+  position: relative;
+}
+#portfolio .grid .grid-item img {
+  width: 100%;
+}
+
+#portfolio .grid .grid-item .caption {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  border: 5px solid #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: all ease 0.6s;
+  -moz-transition: all ease 0.6s;
+  -o-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+#portfolio .grid .grid-item:hover .caption {
+  opacity: 1;
+}
+#portfolio .grid .grid-item .caption h6 {
+  font-weight: bold;
+  font-size: 2.8rem;
+  margin-bottom: 21px;
+}
+#portfolio .grid .grid-item .caption a {
+  margin: 0 5px;
+}
+
+#portfolio .grid .grid-item .caption a i {
+  font-size: 1.8rem;
+}
+
+/* ***************** Portfolio End ***************** */
+
+/* ***************** Contact Start ***************** */
+#contact .container {
+  text-align: center;
+  padding: 84px 100px;
+}
+#contact .container h3 {
+  margin-bottom: 84px;
+}
+#contact .container h4 {
+  font: 600 1.6rem "Montserrat", sans-serif;
+  margin-bottom: 21px;
+}
+#contact .container p {
+  font: 500 1.5rem "Montserrat", sans-serif;
+}
+
+#contact .container .content {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #1c1c1c;
+  margin-bottom: 63px;
+}
+
+#contact .container .content .t-box {
+  width: 31.3%;
+  margin: 0 1% 21px;
+}
+
+#contact .container .content .t-box:last-child {
+  margin-right: 0;
+}
+
+#contact .container .content i {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  font-size: 3.6rem;
+  margin-bottom: 21px;
+}
+
+#contact .container .content i:hover {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+#contact .container .content2 .form-group #input_name,
+#contact .container .content2 .form-group #input_mail {
+  display: block;
+  width: 98%;
+  margin: 0 2% 21px;
+  height: 42px;
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  font: 500 1.5rem "Montserrat", sans-serif;
+}
+
+#contact .container .content2 .form-group #input_name {
+  margin-left: 0;
+}
+#contact .container .content2 .form-group #input_mail {
+  margin-right: 0;
+}
+
+#contact .container .content2 .form-group #input_msg {
+  width: 100%;
+  padding: 10px 0 0 10px;
+  font: 500 1.5rem "Montserrat", sans-serif;
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 42px;
+}
+
+#contact .container .content2 #input_submit {
+  width: 10%;
+  font: 500 1.4rem "Montserrat", sans-serif;
+}
+
+/* ***************** Contact End ***************** */
+
+/* ***************** Footer Start ***************** */
+#footer {
+  background-color: #1c1c1c;
+}
+#footer p {
+  width: 100%;
+  text-align: center;
+  line-height: 63px;
+  color: #fff;
+}
+
+/* ***************** Footer Start ***************** */
+
+/* ************* 960 Start ************* */
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 105px 15px;
+  }
+
+  /* ****** Header Area Start****** */
+
+  /* ****** Header Area End****** */
+
+  /* intro Area Start */
+
+  #intro .intro-content h4 {
+    height: 21px;
+    font: 300 1.6rem/21px "Roboto", sans-serif;
+    position: relative;
+  }
+  #intro .intro-content h1 {
+    height: 63px;
+    font: 300 5rem/63px "Roboto", sans-serif;
+  }
+  #intro .intro-content p {
+    height: 21px;
+    font: 300 2.2rem/21px "Roboto", sans-serif;
+  }
+  #intro .intro-content span {
+    font-weight: bold;
+  }
+  /* intro Area End */
+
+  /* ****** About Area Start ****** */
+
+  #about .container .col-md-5 {
+    width: 38%;
+    padding-right: 0.5%;
+  }
+
+  #about .container img {
+    width: 97%;
+    height: 100%;
+  }
+  #about .container .p-text,
+  #about .container h4,
+  #about .container .p-text > p {
+    margin-bottom: 21px;
+  }
+
+  #about .container .col-md-7 {
+    width: 62%;
+    padding-left: 0.5%;
+    margin-bottom: 10px;
+  }
+
+  #about .container .col-md-7 .btn1 {
+    font: 600 14px/42px "Montserrat", sans-serif;
+    width: 40%;
+    margin-top: 20px;
+  }
+
+  /* ****** About Area End ****** */
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* 공통 영역 시작*/
+  .container {
+    width: 100%;
+    padding: 105px 15px;
+  }
+
+  /* 개별 영역 시작 */
+
+  /* intro Area Start */
+
+  #intro .intro-content h4 {
+    height: 21px;
+    font: 300 1.4rem/21px "Roboto", sans-serif;
+    position: relative;
+  }
+  #intro .intro-content h1 {
+    height: 63px;
+    font: 300 4.5rem/63px "Roboto", sans-serif;
+  }
+  #intro .intro-content p {
+    height: 21px;
+    font: 300 2rem/21px "Roboto", sans-serif;
+  }
+  #intro .intro-content span {
+    font-weight: bold;
+  }
+  /* intro Area End */
+
+  /* ****** About Area Start ****** */
+  #about img {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  #about .a-title {
+    text-align: center;
+    font: 600 36px "Montserrat", sans-serif;
+    margin-bottom: 42px;
+  }
+
+  #about .p-text > p {
+    font: 400 18px "Montserrat", sans-serif;
+  }
+
+  #about .s-box,
+  #about .fo-box {
+    width: 290px;
+  }
+
+  /* ****** About Area End ****** */
+
+  /* ****** Skill Area Start ****** */
+
+  #skill .c-box,
+  .d-box {
+    width: 100%;
+    margin-bottom: 42px;
+  }
+
+  #skill .c-box li,
+  #skill .d-box li {
+    margin-bottom: 42px;
+  }
+
+  /* ****** Skill Area End ****** */
+
+  /* ****** What I do Area Start ****** */
+
+  #what .content > div {
+    width: 49%;
+    height: 294px;
+    padding: 42px 0;
+    background-color: #f7f7f7;
+    margin: 0 1% 21px 0 !important;
+  }
+  /* ****** What I do Area End ****** */
+
+  /* ****** Portfolio Area Start ****** */
+
+  #portfolio .grid .grid-item {
+    width: 48%;
+    margin: 0 1% 21px;
+    position: relative;
+  }
+
+  /* ****** Portfolio Area End ****** */
+
+  /* ****** Contact Area Start ****** */
+
+  /* ****** Contact Area End ****** */
+  #contact .container .content2 #input_submit {
+    width: 15%;
+    font: 500 1.5rem "Montserrat", sans-serif;
+  }
+}
+
+@media screen and (min-width: 377px) and (max-width: 767px) {
+  /* 공통 영역 */
+  .container,
+  .container-fluid {
+    height: 100%;
+    padding: 105px 5px;
+  }
+
+  /* Header Area Start */
+
+  #header h1 {
+    margin-left: 5%;
+  }
+  #header #gnb {
+    width: 100%;
+    height: auto;
+    line-height: 30px;
+    font: 500 18px "Montserrat", sans-serif;
+    border: none;
+  }
+  /* Header Area End */
+
+  /* intro Area Start */
+
+  #intro .intro-content h4 {
+    height: 21px;
+    font: 300 1.4rem/21px "Roboto", sans-serif;
+    position: relative;
+  }
+  #intro .intro-content h1 {
+    height: 63px;
+    font: 300 4.4rem/63px "Roboto", sans-serif;
+  }
+  #intro .intro-content p {
+    height: 21px;
+    font: 300 1.8rem/21px "Roboto", sans-serif;
+  }
+  #intro .intro-content span {
+    font-weight: bold;
+  }
+  /* intro Area End */
+
+  /* ****** About Area Start ****** */
+  #about img {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  #about .a-title {
+    text-align: center;
+    font: 600 36px "Montserrat", sans-serif;
+    margin-bottom: 42px;
+  }
+
+  #about .p-text > p {
+    font: 400 14px "Montserrat", sans-serif;
+  }
+
+  #about .p-text a {
+    display: none;
+  }
+
+  #about .f-box,
+  #about .s-box,
+  #about .fo-box {
+    width: 100%;
+    margin: 0 0 42px 0;
+  }
+
+  /* ****** About Area End ****** */
+
+  /* ****** Skill Area Start ****** */
+  #skill .c-box,
+  .d-box {
+    width: 100%;
+    margin-bottom: 42px;
+  }
+
+  #skill .c-box li,
+  #skill .d-box li {
+    margin-bottom: 42px;
+  }
+
+  /* ****** Skill Area End ****** */
+
+  /* ****** What Area Start ****** */
+
+  #what .content > div {
+    width: 100%;
+    height: 294px;
+    padding: 42px 0;
+    background-color: #f7f7f7;
+    margin: 0 0 21px;
+  }
+
+  /* ****** What Area End ****** */
+
+  /* ****** Portfolio Area Start ****** */
+
+  #portfolio .grid .grid-item {
+    width: 100%;
+    margin: 0 0 21px;
+    position: relative;
+  }
+  /* ****** Portfolio Area End ****** */
+
+  /* ****** Contact Area Start ****** */
+
+  #contact .content .t-box {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 42px !important;
+  }
+
+  #contact .container .content2 .form-group #input_name,
+  #contact .container .content2 .form-group #input_mail {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  #contact .container .content2 #input_submit {
+    width: 20%;
+    font: 500 1.5rem "Montserrat", sans-serif;
+  }
+
+  /* ****** Contact Area End ****** */
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    width: 100%;
+    padding: 105px 15px;
+  }
+
+  /* Header Area Start */
+  #header {
+    width: 100%;
+  }
+  #header h1 {
+    margin-left: 5%;
+  }
+  #header #gnb {
+    width: 100%;
+    height: auto;
+    line-height: 30px;
+    font: 500 18px "Montserrat", sans-serif;
+    border: none;
+  }
+  /* Header Area End */
+
+  /* intro Area Start */
+
+  #intro .intro-content h4 {
+    height: 21px;
+    font: 300 1.4rem/21px "Roboto", sans-serif;
+    position: relative;
+  }
+  #intro .intro-content h1 {
+    height: 63px;
+    font: 300 3.7rem/63px "Roboto", sans-serif;
+  }
+  #intro .intro-content p {
+    height: 21px;
+    font: 300 1.8rem/21px "Roboto", sans-serif;
+  }
+  #intro .intro-content span {
+    font-weight: bold;
+  }
+  /* intro Area End */
+
+  /* ****** About Area Start ****** */
+  #about img {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  #about .a-title {
+    text-align: center;
+    font: 600 36px "Montserrat", sans-serif;
+    margin-bottom: 42px;
+  }
+
+  #about .p-text > p {
+    font: 400 14px "Montserrat", sans-serif;
+  }
+
+  #about .p-text a {
+    display: none;
+  }
+
+  #about .f-box,
+  #about .s-box,
+  #about .fo-box {
+    width: 100%;
+    margin: 0 0 42px 0;
+  }
+
+  /* ****** About Area End ****** */
+
+  /* ****** Skill Area Start ****** */
+  #skill .c-box,
+  .d-box {
+    width: 100%;
+    margin-bottom: 42px;
+  }
+
+  #skill .c-box li,
+  #skill .d-box li {
+    margin-bottom: 42px;
+  }
+
+  /* ****** Skill Area End ****** */
+
+  /* ****** What Area Start ****** */
+
+  #what .content > div {
+    width: 100%;
+    height: 294px;
+    padding: 42px 0;
+    background-color: #f7f7f7;
+    margin: 0 0 21px;
+  }
+
+  /* ****** What Area End ****** */
+
+  /* ****** Portfolio Area Start ****** */
+
+  #portfolio .grid .grid-item {
+    width: 100%;
+    margin: 0 0 21px;
+    position: relative;
+  }
+  /* ****** Portfolio Area End ****** */
+
+  /* ****** Contact Area Start ****** */
+
+  #contact .container {
+    width: 100%;
+    padding: 105px 15px;
+  }
+
+  #contact .container .title h3 {
+    font: 500 4rem "Montserrat", sans-serif;
+  }
+  #contact .content .t-box {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 42px !important;
+  }
+
+  #contact .container .content2 .form-group #input_name,
+  #contact .container .content2 .form-group #input_mail {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  #contact .container .content2 #input_submit {
+    width: 30%;
+    font: 500 1.5rem "Montserrat", sans-serif;
+  }
+
+  /* ****** Contact Area End ****** */
+}
